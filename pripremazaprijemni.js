@@ -155,9 +155,144 @@
 //     return b;
 //   }
 
-function fibonacci(num) {
-    if (num <= 1) return 1;
+// function fibonacci(num) {
+//     if (num <= 1) return 1;
   
-    return fibonacci(num - 1) + fibonacci(num - 2);
-  }
-console.log(fibonacci(7))
+//     return fibonacci(num - 1) + fibonacci(num - 2);
+//   }
+// console.log(fibonacci(7))
+
+//factorial
+// const factorial = (num) => {
+//     if(num === 1){
+//         return 1
+//     }
+//     return num * factorial(num - 1)
+// }
+
+// console.log(factorial(5))
+
+// const zad1 = (num) => {
+
+// }
+
+//1 Napisati program koji racuna zbir niza koji je definisan kao S = 0 -1 + 2 - 3
+
+// cifra = 0
+// zbir = 0
+// const proba = (num) => {
+//     for(i = num; i > 0; i--){
+//         cifra = Math.pow(-1, i) * i
+//         zbir = cifra + zbir
+//     }
+//     return zbir
+// }
+// console.log(proba(3))
+
+
+//2 Napisati program za proveru tacnosti matematicke provere za izracunavanje sume 
+// zbir = 0
+// let prv
+// let cifra
+// const proba = (n) => {
+//     for(i = n; i > 0; i--){
+//         cifra = 2 * i - 1
+//         zbir = cifra + zbir
+//     }
+//     prv = Math.pow(n, 2)
+//     if(zbir == prv){
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// console.log(proba(4))
+
+// 21 Izracunati sumu trocifrenih brojeva sa istim ciframa
+// let zbir = 0
+// let jedinica, desetica, stotina, stotina1
+// for(let i = 100; i < 999; i++){
+//     jedinica = i % 10
+//     desetica = parseInt(i / 10) % 10
+//     stotina1 = i / 100
+//     stotina = parseInt(stotina1)
+//     if(jedinica === desetica && jedinica === stotina && desetica === stotina){
+//         zbir = zbir + 1
+//     }
+// }
+
+
+//Izracunati sumu trocifrenih brojeva koje se sastoji od susednih cifara u nizu prirodnih brojeva 123 654 341
+// const pom = (a, b, c) => {
+//     if(a > b && a > c){
+//         return a
+//     }
+//     if(b > a && b > c){
+//         return b
+//     } else {
+//         return c
+//     }
+// }
+
+
+// let zbir = 0
+// let jedinica, desetica, stotina, stotina1, najv, za1, za2
+// for(let i = 100 ; i <= 999; i++){
+//     jedinica = i % 10
+//     desetica = parseInt(i / 10) % 10
+//     stotina1 = i / 100
+//     stotina = parseInt(stotina1)
+//     najv = pom(stotina, desetica, jedinica)
+//     za1 = najv - 1
+//     za2 = najv - 2
+//     if(najv === stotina && za1 === desetica && za2 === stotina ){
+//         zbir = zbir + i
+//     }
+//     if(najv === desetica && za1 === stotina && za2 === jedinica ){
+//         zbir = zbir + i
+//     }
+//     if(najv === desetica && za1 === jedinica && za2 === stotina ){
+//         zbir = zbir + i
+//     }
+//     if(najv === jedinica && za1 === stotina && za2 === desetica ){
+//         zbir = zbir + i
+//     }
+//     if(najv === jedinica && za1 === desetica && za2 === stotina ){
+//         zbir = zbir + i
+//     }
+
+    
+// }
+// console.log(zbir)
+
+
+
+//61 Izracunati sumu clanova niza cija je vrednost u intervalu [3, 9]
+// const arr = [3, 6, 7, 2, 4, 7 ,8 ,9 ,1, 5, 2, 6 ,7, 0, 0]
+// let sum = 0
+// const zad61 = (array) => {
+//     const arr2 = array.slice(3, 12)
+//     for(i = 0; i < arr2.length ; i ++){
+//         sum = arr2[i] + sum
+//     }
+//     return sum
+// }
+
+// console.log(zad61(arr))
+
+//53 Ispisati clanove niza Ispisati pozitivne nule pa negativne clanove niza 
+// const arr = [3, -6, 7, 2, -4, 7 ,8 ,9 ,1, 5, -2, 6 ,7, 0, 0]
+
+// console.log(arr.sort().reverse())
+
+
+//54 ucitati clanove niza ispisati susedne clanove niza cija je suma parna
+// const arr = [3, -6, 7, 2, -4, 7 ,8 ,9 ,1, 5, -2, 6 ,7, 0, 0]
+// let suma
+// for(i = 0; i < arr.length ; i ++){
+//    suma = arr[i] + arr[i - 1]
+//     if(suma % 2 === 0){
+//         console.log(arr[i])
+//     }
+// }
