@@ -293,23 +293,64 @@
 // 13 dati su nizovi a i b koji, redom, imaju n i m elemenata. Svi elementi ovih nizova si cifre. Ovim
 // nizovima su predstavljenja dva broja. Formirati niz c koji predstavlja zbir brojeva datih sa prva dva niza
 
-const a = [3, 6 ,7, 8, 1, 9, 8, 9]
-const b = [1, 8, 7, 6 ,3, 8, 9, 1, 3]
-const c = []
-if(a.length > b.length){
-    for(let i = 0; i < a.length; i++){
-        if(a[i] == undefined){
-        let clan = a[i] + b[i]
-        c.push(clan)
-        } else {
-            c.push(a[i])
-        }
-    }
-} else {
-    for(let i = 0; i < b.length; i++){
-        let clan = a[i] + b[i]
-        c.push(clan)
-    }
-}
+// const a = [3, 6, 7, 8, 1, 9, 8, 9, 4, 5]
+// const b = [1, 8, 7, 6 ,3, 8, 9, 1, 3, 9, 0]
+// const c = []
+// if(a.length > b.length){
+//     for(let i = 0; i < a.length; i++){
+        
+//         let clan = a[i] + b[i]
+//         if(b[i] !== undefined ){
+//             c.push(clan)
+//         } else{
+//             c.push(a[i])
+//         }
+        
+       
+            
+        
+//     }
+// } else {
+//     for(let i = 0; i < b.length; i++){
+//         let clan = a[i] + b[i]
+//         if(a[i] !== undefined ){
+//             c.push(clan)
+//         } else{
+//             c.push(b[i])
+//         }
+//     }
+// }
+// console.log(c)
 
-console.log(c)
+// 14 Polinom se moze predstaviti nizom koeficijenata. Napisati program kojim se odredjuej koeficijenti
+// a) zbira dva polinoma
+
+// const a = [5, 9, 30, 10]
+// let polinom
+// let x = 5
+// for(let i = 0; i < a.length; i++){
+//     polinom = a[i] * Math.pow(x, i)
+// }
+// console.log(5)
+
+// 15 U nekom gradu ima n zgrada. Visine tuh zgrada su date u nizu a.
+// Odrediti za svaki broj 0 < m <= n koliko je najmanje potrebno dograditi spratova da bi u gradu
+// bilo bar m zgrada sa istim brojem spratova
+
+// const n = 5 // broj zgrada
+// const a = [10, 20, 10, 10, 50]
+// let art
+// let suma = 0
+// for(let i = 0 ; i < n; i++){
+//     suma = suma + a[i]
+// }
+// art = suma / n
+// let brspratova = 0
+// let dogradnja
+// for(let i = 0 ; i < n; i++){
+//     if(art > a[i]){
+//         dogradnja = art - a[i]
+//         brspratova = dogradnja + brspratova
+//     }
+// }
+// console.log(brspratova)
