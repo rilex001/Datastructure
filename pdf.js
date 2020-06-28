@@ -119,3 +119,197 @@
 // i broji k dece u desno. Dete koje je na k - tom mestu ispada iz igre, a prvo sledece
 // dete pocinje brojanje na isti nacin. Odrediti koje dete ce poslednje ostati u igri
 
+
+
+//8 Urediti dati niz celih brojeva
+// a) U neopadajuci redosled 
+// b) U neopadajuci redosled po kriterijumu rastojanja od aritmeticke sredine niza.
+// c) Tako da na pocetku budu prvo parni brojevi uredjeni u neopadajuci redosled,
+//a za njima neprani brojevi uredjeni u nerastuci redosled
+// let k  = prompt('Unesi duzinu niza')
+// const arr = []
+// for(let i = 0; i < k; i++){
+//     let clan = prompt('Unesi clan niza')
+//     arr.push(clan)
+// }
+// a)
+// let selectionSort = (arr) => {
+//     let len = arr.length;
+//     for (let i = 0; i < len; i++) {
+//         let min = i;
+//         for (let j = i + 1; j < len; j++) {
+//             if (arr[min] < arr[j]) {
+//                 min = j;
+//             }
+//         }
+//         if (min !== i) {
+//             let tmp = arr[i];
+//             arr[i] = arr[min];
+//             arr[min] = tmp;
+//         }
+//     }
+//     return arr;
+// }
+// console.log(selectionSort(arr))
+
+// b) ?
+// c) ?
+
+// 9 Odrediti podniz uzastopnih elemenata datog niza koji ima nejvecu sumu
+// const arr = [4, 6, 6,,1, 1, 1, 50, 50, 50, 5, 10, 10, 10, 10, 10, 10, 10 ]
+// let suma = 0
+// let max = null
+// let count = 0
+// const sumaPodniza = (arr) => {
+    
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] === arr[i - 1]){
+//             suma = suma + arr[i]
+//         }   
+//         else{
+//             suma = 0
+//         }
+//         if(suma > max){
+//             max = suma
+//         }
+//         // console.log(max)
+//     }
+//     return max
+// }
+// console.log(sumaPodniza(arr))
+
+//10 Na takmicenju je ucestvovalo n (n <= 1000) ucenika. Oni su mogli da osvoje izmedju 0 i 100 poena.
+// U nizu a su dati  rezultati za svakog ucenika
+// a) Ukoliko je data granica p koja odredjuje minimalan broj potrebnih poena za prolaz u sledeci krug 
+// takmicenja, odrediti koliko ucenika prolazi dalje 
+// const a = []
+// let brojucenika = prompt('Unesi broj ucenika')
+
+// for(let j = 0; j < brojucenika; j++){
+//     let clan = prompt('Unesite broj poena za ucenika')
+//     a.push(clan)
+// }
+// let p = prompt('Unesi potreban broj poena za prolaz')
+// Number(p)
+// count = 0
+// for(let i = 0; i < a.length; i++){
+//     if(a[i] > p){
+//         count++
+//     }
+// }
+
+// console.log(p)
+// console.log(a)
+// console.log(count)
+
+// b) Odrediti granicu p tako da broj ucenika koji prolazi dalje nije veci od unapred zadatog
+// broj k
+
+// const a = [50, 90, 40, 60, 90, 23, 77]
+// let k = prompt('Koliko ucenika zelite da prodje ')
+// Number(k)
+// let selectionSort = (arr) => {
+//     let len = arr.length;
+//     for (let i = 0; i < len; i++) {
+//         let min = i;
+//         for (let j = i + 1; j < len; j++) {
+//             if (arr[min] > arr[j]) {
+//                 min = j;
+//             }
+//         }
+//         if (min !== i) {
+//             let tmp = arr[i];
+//             arr[i] = arr[min];
+//             arr[min] = tmp;
+//         }
+//     }
+//     return arr;
+// }
+// console.log(selectionSort(a).slice(0, k))
+
+//11 Dat je niz karaktera koji predstavlja izraz sa zagradama. Proveriti da li su zagrade ispravno zadate
+//(interesuju nas samo zagrade, a ne i ostatak izraza)
+
+// const arr = ['(', ')', ')', '(', 'mrk']
+// let otv = 0
+// let zat = 0
+// let isGood = arr => {
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] === ')' ){
+//             zat++
+//         }
+//         if(arr[i] === '('){
+//             otv++
+//             console.log(otv)
+//         } 
+        
+//         if(otv === zat){
+//             return true
+//         } else{
+//             return false
+//         }
+//     }
+// }
+// console.log(isGood(arr))
+
+
+// 12. Data su dva niza karaktera a i b sa po n elemenata. Odrediti da li je niz b anagram niza a
+// const a = [3, 6 ,7, 8, 1, 9, 8]
+// const b = [1, 8, 7, 6 ,3, 8, 9]
+
+// let selectionSort = (arr) => {
+//     let len = arr.length;
+//     for (let i = 0; i < len; i++) {
+//         let min = i;
+//         for (let j = i + 1; j < len; j++) {
+//             if (arr[min] > arr[j]) {
+//                 min = j;
+//             }
+//         }
+//         if (min !== i) {
+//             let tmp = arr[i];
+//             arr[i] = arr[min];
+//             arr[min] = tmp;
+//         }
+//     }
+//     return arr;
+// }
+// selectionSort(a)
+// selectionSort(b)
+// let brojac = 0
+//     for(let i = 0; i < a.length; i++){
+//         if(a[i] === b[i]){
+//             brojac++
+//         }
+//     }
+
+// if(brojac === a.length){
+//     console.log('Nizovi su anagrami')
+// } else {
+//     console.log('Nizovi nisu anagrami')
+// }
+
+
+// 13 dati su nizovi a i b koji, redom, imaju n i m elemenata. Svi elementi ovih nizova si cifre. Ovim
+// nizovima su predstavljenja dva broja. Formirati niz c koji predstavlja zbir brojeva datih sa prva dva niza
+
+const a = [3, 6 ,7, 8, 1, 9, 8, 9]
+const b = [1, 8, 7, 6 ,3, 8, 9, 1, 3]
+const c = []
+if(a.length > b.length){
+    for(let i = 0; i < a.length; i++){
+        if(a[i] == undefined){
+        let clan = a[i] + b[i]
+        c.push(clan)
+        } else {
+            c.push(a[i])
+        }
+    }
+} else {
+    for(let i = 0; i < b.length; i++){
+        let clan = a[i] + b[i]
+        c.push(clan)
+    }
+}
+
+console.log(c)
