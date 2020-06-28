@@ -82,20 +82,20 @@
 
 //11 Sataviti program za odredjivanje najmanjeg clana niza ciji su indeksi neprani i najveceg clana niza ciji su 
 //indeksi parni 
-let max = null
-let min = null
-const arr = [2, 8, 5, -7, -4]
-for(let i = 0; i < arr.length; i++){
-    if(i % 2 === 0 ){
-        if(arr[i] > max){
-            max = arr[i]
-        }
-    } else {
-        if(arr[i] < min){
-            min = arr[i]
-        }
-    }
-}
+// let max = null
+// let min = null
+// const arr = [2, 8, 5, -7, -4]
+// for(let i = 0; i < arr.length; i++){
+//     if(i % 2 === 0 ){
+//         if(arr[i] > max){
+//             max = arr[i]
+//         }
+//     } else {
+//         if(arr[i] < min){
+//             min = arr[i]
+//         }
+//     }
+// }
 
-console.log(min)
-console.log(max)
+// console.log(min)
+// console.log(max)
