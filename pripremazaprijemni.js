@@ -105,7 +105,7 @@
 
 //55 Ucitati clanove niza. Ispisati clanove niza u obrnutom redosledu 
 // const arr = [3, 5, 6, 8, 9, 10]
-// const arr1 = []
+//const arr1 = []
 
 // for(let i = 0; i < arr.length; i++){
 
@@ -287,13 +287,13 @@
 // console.log(arr.sort().reverse())
 
 
-//54 ucitati clanove niza ispisati susedne clanove niza cija je suma parna
-// const arr = [3, -6, 7, 2, -4, 7 ,8 ,9 ,1, 5, -2, 6 ,7, 0, 0]
-// let suma
-// for(i = 0; i < arr.length ; i ++){
-//    suma = arr[i] + arr[i - 1]
-//     if(suma % 2 === 0){
-//         console.log(arr[i])
-//     }
-// }
+// 54 ucitati clanove niza ispisati susedne clanove niza cija je suma parna
+const arr = [3, -6, 7, 2, -4, 7 ,8 ,9 ,1, 5, -2, 6 ,7, 0, 0]
+let suma
+for(i = 0; i < arr.length ; i ++){
+   suma = arr[i] + arr[i - 1]
+    if(suma % 2 === 0){
+        console.log(arr[i])
+    }
+}
 

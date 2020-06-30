@@ -72,7 +72,7 @@
 //     }
 //     return arr
 // }
-// console.log(nizlevo(arr, 9))
+// console.log(nizlevo(arr, 2))
 
 // b)
 // const arr = [4, 0, 6, 3, 6, 1]
@@ -98,7 +98,7 @@
 // console.log(arr)
 
 //6 Dat je niz celih brojeva a duzine n. Odrediti duzinu najduzeg neprekidnog niza nula
-// const arr = [4, 0, 0, 0,0,0,0, 6, 3, 6,0,0,0, 1,1, 0, 0,0,0,0]
+// const arr = [4, 0, 0, 0,0,0,0, 6, 3, 6,0,0,0, 1,1, 0, 0,0,0,0, 0, 0]
 // const getMaxLength = (arr) => {
 //     let count = 0
 //     let result = 0
@@ -375,3 +375,39 @@
 // }
 
 
+//55 Ucitati clanove niza. Ispisati clanove niza u obrnutom redosledu 
+// const arr = [3, 5, 6, 8, 9, 10]
+// let count = arr.length
+
+//  for(let i = count; i > 0; i--){
+//      console.log(arr[i])
+//  }
+
+
+// function fibonacci(num) {
+//     if (num <= 1) return 1;
+  
+//     return fibonacci(num - 1) + fibonacci(num - 2);
+//   }
+// console.log(fibonacci(7))
+
+//factorial
+// const factorial = (num) => {
+//     if(num === 1){
+//         return 1
+//     }
+//     return num * factorial(num - 1)
+// }
+
+// console.log(factorial(5))
+
+// 54 ucitati clanove niza ispisati susedne clanove niza cija je suma parna
+// const arr = [3, -6, 7, 2, -4, 7 ,8 ,9 ,1, 5, -2, 6 ,7, 0, 0]
+// let suma
+// for(i = 0; i < arr.length ; i ++){
+//    suma = arr[i] + arr[i - 1]
+//     if(suma % 2 === 0){
+//         console.log(arr[i])
+//         console.log(arr[i - 1])
+//     }
+// }
