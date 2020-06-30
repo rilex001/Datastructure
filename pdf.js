@@ -354,3 +354,24 @@
 //     }
 // }
 // console.log(brspratova)
+
+
+// Dekadni u binarni 
+// let Dekadni = 11
+// let binarni 
+// let broj = []
+// while(Dekadni > 0){
+//     binarni = parseInt(Dekadni) % 2
+//     broj.unshift(binarni)
+//     Dekadni = parseInt(Dekadni) / 2
+// }
+
+// let mrk = broj.join('')
+// console.log(mrk)
+// if(mrk === '01011'){
+//     console.log('T')
+// } else{
+//     console.log('N')
+// }
+
+
